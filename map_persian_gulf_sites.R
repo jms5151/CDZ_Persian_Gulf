@@ -17,6 +17,8 @@ pg.sites <-data.frame(longitude = pgsites$Longitude..E.
                     , latitude = pgsites$Latitude..N.
                     , Site = pgsites$Site)
 
+# set google api
+source("C:/Users/Jeremy/Box Sync/R_functions/Google_maps_API_token.R")
 
 # get basemap 
 pg <- get_googlemap(center = c(55.16416, 25.37026), maptype = "terrain"
